@@ -1,3 +1,4 @@
+php_flag display_errors on;
 ############################################
 ## uncomment these lines for CGI mode
 ## make sure to specify the correct cgi php binary file name
