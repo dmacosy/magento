@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0496cbb2-7643-42bb-84e7-1ad070ce3a24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="magento.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,54 +22,91 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xhtml/index.php">
+      <file leaf-file-name="GamePiece.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/games/checkers/GamePiece.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="52" selection-start="197" selection-end="230" vertical-scroll-proportion="-3.125">
+            <state line="16" column="9" selection-start="326" selection-end="326" vertical-scroll-proportion="0.28844115">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zombie.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/zombie.php">
+      <file leaf-file-name="Board.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/checkers/Board.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="0" selection-start="6551" selection-end="6699" vertical-scroll-proportion="-15.326923">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blackjack.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/games/blackjack.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="311" column="56" selection-start="8013" selection-end="8013" vertical-scroll-proportion="0.7635135">
-              <folding>
-                <marker date="1362087702461" expanded="true" signature="7513:7544" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7954:8221" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7954:8294" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7954:8293" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7954:8252" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7954:8054" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7954:8054" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="7956:8054" placeholder="..." />
-                <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-                <marker date="1362087702461" expanded="true" signature="8014:8221" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="8014:8252" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="8014:8054" placeholder="..." />
-                <marker date="1362087702461" expanded="true" signature="8014:8054" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pig.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/pig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="-12.5">
+            <state line="56" column="21" selection-start="1491" selection-end="1491" vertical-scroll-proportion="-36.615383">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Play.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/checkers/Play.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="36" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-31.692308">
+              <folding>
+                <element signature="e#361#420#0" expanded="true" />
+                <element signature="e#445#504#0" expanded="true" />
+                <marker date="1362746046300" expanded="true" signature="1393:1548" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="1715:1752" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="1753:1989" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="1753:1916" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="1797:1834" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="1879:1932" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="1879:1916" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2231:2268" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2269:2503" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2269:2435" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2269:2394" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2269:2394" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2313:2350" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2393:2435" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2643:2680" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2681:2848" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+                <marker date="1362746046300" expanded="true" signature="2933:2968" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logic.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/checkers/logic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-4.576923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../procedural/section2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="12" selection-start="2682" selection-end="2758" vertical-scroll-proportion="-34.653847">
+              <folding>
+                <marker date="1362676073091" expanded="true" signature="3030:3066" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="3174:3225" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="3400:3451" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="3938:3989" placeholder="..." />
+                <marker date="1362676073091" expanded="false" signature="4058:4069" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="4095:4613" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="4128:4231" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="4291:4394" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="4452:4555" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="4589:4608" placeholder="..." />
+                <marker date="1362676073091" expanded="true" signature="5657:5708" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,13 +124,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/info.php" />
         <option value="$PROJECT_DIR$/xhtml/index.php" />
         <option value="$PROJECT_DIR$/xhtml/new.php" />
         <option value="$PROJECT_DIR$/games/pig.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/games/zombie.php" />
         <option value="$PROJECT_DIR$/games/blackjack.php" />
+        <option value="$PROJECT_DIR$/procedural/section2.php" />
+        <option value="$PROJECT_DIR$/games/checkers.php" />
+        <option value="$PROJECT_DIR$/games/checkers/checkers.php" />
+        <option value="$PROJECT_DIR$/games/checkers/board.php" />
+        <option value="$PROJECT_DIR$/games/checkers/logic.php" />
+        <option value="$PROJECT_DIR$/games/checkers/GamePieces.php" />
+        <option value="$PROJECT_DIR$/../procedural/section2.php" />
+        <option value="$PROJECT_DIR$/games/checkers/GamePiece.php" />
+        <option value="$PROJECT_DIR$/games/checkers/Play.php" />
+        <option value="$PROJECT_DIR$/games/checkers/Board.php" />
       </list>
     </option>
   </component>
@@ -106,9 +150,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1919" />
-    <option name="width" value="1922" />
-    <option name="height" value="1081" />
+    <option name="x" value="1920" />
+    <option name="y" value="28" />
+    <option name="width" value="1920" />
+    <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -168,6 +213,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checkers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pieces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -176,11 +261,17 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Checkers.java" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/games/checkers" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Script.blackjack.php">
     <configuration default="false" name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
@@ -266,23 +357,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
+    <frame x="1920" y="28" width="1920" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18958333" sideWeight="0.6015119" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18958333" sideWeight="0.67034066" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39848813" sideWeight="0.49786097" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39956802" sideWeight="0.4983957" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34449244" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3436874" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -346,40 +437,10 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="24" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Mage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="117.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Varien/Profiler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1000" selection-end="1000" vertical-scroll-proportion="80.291664" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="0" selection-start="9530" selection-end="9530" vertical-scroll-proportion="-205.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Varien/Autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="2699" selection-end="2699" vertical-scroll-proportion="-1.5049702" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="20" selection-end="20" vertical-scroll-proportion="0.03440367" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Customer/controllers/AccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.017462166" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php.sample">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38157895" />
@@ -405,77 +466,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xhtml/new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="253" selection-end="271" vertical-scroll-proportion="-5.0">
-          <folding>
-            <element signature="e#31#74#0" expanded="true" />
-            <element signature="e#547#589#0" expanded="true" />
-            <marker date="1361820750329" expanded="true" signature="1024:1051" placeholder="..." />
-          </folding>
-        </state>
+        <state line="8" column="0" selection-start="253" selection-end="271" vertical-scroll-proportion="-5.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/community/Phoenix/Moneybookers/controllers/MoneybookersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5979381">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5979381" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/controllers/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="51.75">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="51.75" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xhtml/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="197" selection-end="230" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
+        <state line="5" column="52" selection-start="197" selection-end="230" vertical-scroll-proportion="-3.125" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/zombie.php">
+    <entry file="file://$PROJECT_DIR$/app/etc/local.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="0" selection-start="6551" selection-end="6699" vertical-scroll-proportion="-15.326923">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/pig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
+        <state line="40" column="26" selection-start="1413" selection-end="1426" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/blackjack.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="56" selection-start="8013" selection-end="8013" vertical-scroll-proportion="0.7635135">
+        <state line="0" column="0" selection-start="0" selection-end="5" vertical-scroll-proportion="-2.3796394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webide.jar!/resources/html5-schema/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="23" selection-start="4629" selection-end="4629" vertical-scroll-proportion="-3.122807">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../procedural/section2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="12" selection-start="2682" selection-end="2758" vertical-scroll-proportion="-34.653847">
           <folding>
-            <marker date="1362087702461" expanded="true" signature="7513:7544" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7954:8221" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7954:8294" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7954:8293" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7954:8252" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7954:8054" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7954:8054" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="7956:8054" placeholder="..." />
-            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <marker date="1362087702461" expanded="true" signature="8014:8221" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="8014:8252" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="8014:8054" placeholder="..." />
-            <marker date="1362087702461" expanded="true" signature="8014:8054" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="3030:3066" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="3174:3225" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="3400:3451" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="3938:3989" placeholder="..." />
+            <marker date="1362676073091" expanded="false" signature="4058:4069" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="4095:4613" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="4128:4231" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="4291:4394" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="4452:4555" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="4589:4608" placeholder="..." />
+            <marker date="1362676073091" expanded="true" signature="5657:5708" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Checkers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-9.852426">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/logic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/Play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="36" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-31.692308">
+          <folding>
+            <element signature="e#361#420#0" expanded="true" />
+            <element signature="e#445#504#0" expanded="true" />
+            <marker date="1362746046300" expanded="true" signature="1393:1548" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="1715:1752" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="1753:1989" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="1753:1916" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="1797:1834" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="1879:1932" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="1879:1916" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2231:2268" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2269:2503" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2269:2435" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2269:2394" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2269:2394" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2313:2350" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2393:2435" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2643:2680" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2681:2848" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2696:2771" placeholder="..." />
+            <marker date="1362746046300" expanded="true" signature="2933:2968" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/Board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="21" selection-start="1491" selection-end="1491" vertical-scroll-proportion="-36.615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/GamePiece.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="326" selection-end="326" vertical-scroll-proportion="0.28844115">
+          <folding />
         </state>
       </provider>
     </entry>
