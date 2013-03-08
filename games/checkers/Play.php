@@ -1,12 +1,13 @@
 <?php
-
-
+//error_reporting(E_ALL | E_STRICT);
+//ini_set('display_errors', 1);
+session_start();
 
 include 'Board.php';
-var_dump("hello");
+include 'Cell.php';
+//var_dump("hello");
 $_SESSION['board']= new Board();
-
-var_dump($_SESSION['board']);
+echo "<pre>";
 
 
 ?>
@@ -16,8 +17,8 @@ var_dump($_SESSION['board']);
 <html xmlns="http://www.w3.org/1999/xhtml">
     <body>
         <form method ="get" action="" >
-            <div style="text-align: center; margin: 25px 500px 0px 500px;  ">
-                <table style= "padding:30px ;  margin:auto;background-color:white"border="4">
+            <div style="text-align: center;   ">
+                <table style= "padding:5px ; margin:auto; background-color:white"border="4">
                     <?php echo display(); ?>
                 </table>
             </div>
@@ -26,8 +27,7 @@ var_dump($_SESSION['board']);
 </html>
 <?php
 
-    error_reporting(E_ALL | E_STRICT);
-    ini_set('display_errors', 1);
+
 
 //if(!isset($_SESSION['board'])){
 
@@ -38,57 +38,55 @@ var_dump($_SESSION['board']);
 //*********************************************************************************************************************
 
     function display(){
-
-        $row=-1;
-        $col=-1;
+        global $r, $col, $s, $id;
         $s="";
-
+        $r=-1;
         $count=-1;
         $count2=-1;
-        foreach($_SESSION['board']->getBoard() as $board){
+        foreach($_SESSION['board']->getBoard() as $row){
 
-            global $row, $col, $s;
-            $row++;
+
+
+            $r++;
             $col=-1;
             $s.='<tr >';
 
-            foreach($board as $cell){
+            foreach($row as $cell){
                 $col++;
 
-
-
-                //var_dump($cell);
-                if(is_object($cell) && $cell->get("color") =="black"){
-                    $id=$cell->get("id");
-                    //$cell= new GamePiece(false,"black",$count);
-                    $s.='<td style= "background-color:#696969;padding:15px">
-                            <input style="background-color:#696969; padding:5px" type = "image" src= "pieces/blackPiece.jpg"
-                            Name = "'.$id.'" VALUE =" " width="55" height="55"/>
+                if((is_object($cell->getChecker()))){
+                    $id=$cell->getChecker()->get('id');
+                    if( $cell->getChecker()->get('color') == "black"){
+                    //var_dump($id);
+                    $s.='<td style= "background-color:#696969">
+                            <input style="background-color:#696969;color:black;  width:65px; height:65px;position:center; background-image:url(pieces/blackPiece.jpg)" type = "submit"
+                              name = "checker" value ="'.$id.'"/>
                         </td>';
 
 
-                }
+                    }
+                    else if($cell->getChecker()->get('color') =="red"){
 
-                else if(is_object($cell) && $cell->get("color") =="red"){
-                    $id=$cell->get("id");
-                    //$cell= new GamePiece(false,"red",$count);
-                    $s.='<td style= "background-color:#696969;padding:15px">
-                            <input style="background-color:#696969; padding:5px" type = "image" src= "pieces/redPiece.jpg"
-                            Name = "'.$id.'" VALUE =" " width="55" height="55"/>
-                        </td>';
-//                    die(var_dump($s));
+                        $s.='<td style= "background-color:#696969">
+                                <input style="background-color:#696969;color:f10707; width:65px; height:65px;position:center; background-image:url(pieces/redPiece.jpg)" type = "submit"
+                              name = "checker" value ="'.$id.'"/>
+                            </td>';
+                    }
+
                 }
-                else if($cell=="LIVE"){
-                    $s.='<td style= "background-color:#696969;padding:15px"><input style="background-color:#696969;
-                                     padding:15px" type = "Submit" Name = "show" VALUE = "      "width="55" height="55" /></td>';
+                else if($cell->getLive()==true ){
+                    $s.='<td style= "background-color:#696969">
+                            <input style="background-color:#696969; width:65px; height:65px;color:#696969;
+                             padding:15px" type = "Submit" Name = "show" VALUE = "'.$r."-".$col.'"  />
+                         </td>';
                 }
                 else{
-                        $s.='<td style= "background-color:black;padding:15px"></td>';
+                        $s.= '<td style= "background-color:#000000;padding:10px"></td>';
                     }
                 if($col==7){
 
                     $s.='</tr>';
-                    //die(var_dump($s));
+
                 }
             }
         }

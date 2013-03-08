@@ -4,7 +4,7 @@ include 'GamePiece.php';
     class Board
     {   private $board;
 
-        private $env=array();
+        //private $env=array();
 
         function __construct(){
 
@@ -16,7 +16,7 @@ include 'GamePiece.php';
 
         }
 
-//        function setStatus(){
+//        function cell(){
 //
 //            for($row=0; $row<8; $row++){
 //                for($col=0; $col<8; $col++){
@@ -40,21 +40,22 @@ include 'GamePiece.php';
                 for($col=0; $col<8; $col++){
                     if($row%2==$col%2){
                         if($row<3){
+
+                            $this->board[$row][$col]=new Cell(true,true,array("black",$count));
                             $count++;
-                            $this->board[$row][$col]=new GamePiece("black",$count);
                         }
                         else if($row>4){
-                            $count++;
-                            $this->board[$row][$col]=new GamePiece("red",$count);;
-                        }
-                        else {
-                            $this->board[$row][$col]="LIVE";
-                        }
 
+                            $this->board[$row][$col]=new Cell(true,true,array("red",$count));
+                            $count++;
+                        }
+                        else
+                            $this->board[$row][$col]=new Cell(true,false,null);
                     }
-                    else{
-                        $this->board[$row][$col]="UNUSED";
+                    else {
+                        $this->board[$row][$col] = new Cell();
                     }
+
                 }
 
             }
