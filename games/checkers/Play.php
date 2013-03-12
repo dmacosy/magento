@@ -1,15 +1,13 @@
 <?php
     error_reporting(E_ALL | E_STRICT);
     ini_set('display_errors', 1);
-    session_start();
+
 
     include 'Board.php';
     include 'Cell.php';
     include 'Logic.php';
-
-
-    $_SESSION['board']= new Board();
-    $logic=new Logic();
+    session_start();
+//    $_SESSION['board']= new Board();
 
 
 
@@ -24,26 +22,30 @@
     <body>
         <form method ="get" action="" >
             <div style="text-align: center;   ">
+                <input type = "Submit" Name = "Submit" VALUE = "New Game" /><br><br>
                 <table style= "padding:5px ; margin:auto; background-color:white"border="4">
                     <?php
-                        echo display();
-                        //var_dump($logic->canMove(5,1,4,2));
 
-                        if(isset($_GET["checker"])){
-                            echo '<div style="text-align: center;   ">';
-                            var_dump($_GET["checker"]);
-                            $logic->setCurrentPos($_GET["checker"]);
-                            $test=$logic->getCurrentPos();
-                            var_dump($test);
+                        if(!isset($_SESSION['board'])){
+                            $_SESSION['board']= new Board();
                         }
-                        if(isset($_GET["show"])){
-                            echo '<div style="text-align: center;   ">';
-                            var_dump($_GET["show"]);
-                            $logic->setCurrentPos($_GET["show"]);
-                            $test=$logic->getCurrentPos();
-                            var_dump($test);
-                        }
+                        else if(isset($_GET["checker"])){
 
+
+                                $_SESSION['board']->getLogic()->selectedChecker($_GET["checker"]);
+
+                        }
+                        else if(isset($_GET["show"])){
+                            echo '<div style="text-align: center;   ">';
+
+                            $_SESSION['board']->getLogic()->CheckerMove($_GET["show"]);
+
+                        }
+                        else if(isset($_GET['Submit'])){
+                            unset($_SESSION['board']);
+                            $_SESSION['board']= new Board();
+                        }
+                    echo display();
 
 
                     ?>
@@ -61,11 +63,10 @@
 //*********************************************************************************************************************
 
     function display(){
-        global $r, $col, $s, $id, $test;
+        global $r, $col, $s, $id;
         $s="";
         $r=-1;
-        $count=-1;
-        $count2=-1;
+
         foreach($_SESSION['board']->getBoard() as $row){
 
             $r++;
@@ -73,6 +74,8 @@
             $s.='<tr >';
 
             foreach($row as $cell){
+
+
                 $col++;
                 if((is_object($cell->getChecker()))){
 
@@ -119,4 +122,3 @@
         return $s;
 
     }
-

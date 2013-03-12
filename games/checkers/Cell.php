@@ -5,7 +5,7 @@ class Cell
     private $_isLive;
     private $_hasPiece;
     private $_checker;
-    private $_id;
+
 
     public function __construct($isLive = false, $hasPiece = false, $checker = null){
         if(isset($checker)){
@@ -44,18 +44,17 @@ class Cell
         $this->_checker= new GamePiece($checker[0],$checker[1]);
 
     }
-    public function getChecker(){
+    public function &getChecker(){
 
         return $this->_checker;
     }
-    public function setId($id){
 
-        $this->_id=$id;
+    public function makeNull(){
 
+        $this->_checker = null;
+        $this->_hasPiece = false;
     }
-    public function getCell(){
-
-        return $this->_id;
+    public function takeChecker($checker){
+        $this->_checker= clone $checker;
     }
-
 }

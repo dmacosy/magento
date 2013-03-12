@@ -2,24 +2,15 @@
 
 class Logic
 {
-    private $_id;
-
-    /**
-     * Current cell container
-     * @var Cell
-     */
-
+    protected  $_id;
+    protected  $_currentPos;
+    protected  $_selected;
 
     function __construct(){
 
-        //$this->currentPos($ID);
-
     }
 
-
-
-
-    public function setCurrentPos($ID){
+    public function setPosition($ID){
 
         $currentX="";
         $currentY="";
@@ -44,8 +35,6 @@ class Logic
                         $currentX=(int)$str[0];
                         $currentY=(int)$str[1];
                     }
-
-
                 }
             }
         }
@@ -53,7 +42,7 @@ class Logic
         $this->_id= $currentX.','.$currentY;
     }
 
-    public function getCurrentPos(){
+    public function getPosition(){
         return $this->_id;
     }
 
@@ -66,18 +55,65 @@ class Logic
             return true;
 
         }
+        else if((($currentX+2==$targetX)||($currentX-2==$targetX)) && (($currentY+2==$targetY)||($currentY-2==$targetY))
+            &&  ($board[$targetX][$targetY]->getPiece()==false)  ){
+
+
+                if(($targetX<=$currentX)&&($targetY<=$currentY)){
+                    $board[$currentX-1][$currentY-1]->makeNull();
+                }
+                else if(($targetX<=$currentX)&&($targetY>=$currentY)){
+                    $board[$currentX-1][$currentY+1]->makeNull();
+                }
+                else if(($targetX>=$currentX)&&($targetY<=$currentY)){
+                    $board[$currentX+1][$currentY-1]->makeNull();
+                }
+                else if(($targetX>=$currentX)&&($targetY>=$currentY)){
+                    $board[$currentX+1][$currentY+1]->makeNull();
+                }
+
+                return true;
+
+        }
         else{
             return false;
         }
 
     }
+    public function selectedChecker($ID){
+
+        $this->setPosition($ID);
+        $str=explode(",", $this->getPosition());
+        $currentX=(int)$str[0];
+
+        $currentY=(int)$str[1];
+        $this->_currentPos=array($currentX,$currentY);
+
+    }
+
+    public function CheckerMove($targetID){
+
+        $this->setPosition($targetID);
+        $targetPos=$this->getPosition();
+        $str=explode(",", $targetPos);
+        $targetX=(int)$str[0];
+        $targetY=(int)$str[1];
+
+        $currentX=$this->_currentPos[0];
+        $currentY=$this->_currentPos[1];
+
+        if($this->canMove($currentX,$currentY,$targetX,$targetY)){
+            $board = $_SESSION['board']->getBoard();
+            $s=$board[$targetX][$targetY];
+            $t=$board[$currentX][$currentY];
+
+            $s->takeChecker($t->getChecker());
+            $board[$currentX][$currentY]->makeNull();
+        }
+    }
 
     /**
      * @todo needs to be implemented
      */
-    public function CheckerMove(){
-
-    }
-
 
 }
