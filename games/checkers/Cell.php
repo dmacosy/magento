@@ -14,7 +14,7 @@ class Cell
         }
         $this->setLive($isLive);
         $this->setPiece($hasPiece);
-        //$this->setId($id);
+
 
     }
     public function setLive($isLive){
@@ -23,6 +23,7 @@ class Cell
 
 
     }
+
     public function setPiece($hasPiece){
 
         $this->_hasPiece = $hasPiece;
@@ -39,7 +40,7 @@ class Cell
     }
     public function setChecker($checker){
 
-        //var_dump($checker);
+
         $this->_checker= new GamePiece($checker[0],$checker[1]);
 
     }

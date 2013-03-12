@@ -4,37 +4,18 @@ include 'GamePiece.php';
     class Board
     {   private $board;
 
-        //private $env=array();
 
         function __construct(){
 
             $this->board;
-            //$this->setStatus();
             $this->setup();
-            //var_dump($this->board);
+
 
 
         }
 
-//        function cell(){
-//
-//            for($row=0; $row<8; $row++){
-//                for($col=0; $col<8; $col++){
-//                    if($row%2==$col%2){
-//                        $this->board[$row][$col]="LIVE";
-//                    }
-//                    else{
-//                        $this->board[$row][$col]="UNUSED";
-//                    }
-//
-//                }
-//
-//            }
-//
-//        }
         function setup(){
             $count=0;
-
 
             for($row=0; $row<8; $row++){
                 for($col=0; $col<8; $col++){
@@ -50,7 +31,7 @@ include 'GamePiece.php';
                             $count++;
                         }
                         else
-                            $this->board[$row][$col]=new Cell(true,false,null);
+                            $this->board[$row][$col]=new Cell(true,false);
                     }
                     else {
                         $this->board[$row][$col] = new Cell();
@@ -60,9 +41,7 @@ include 'GamePiece.php';
 
             }
         }
-//        function cell(){
-//
-//        }
+
         function getBoard(){
 
             return $this->board;
