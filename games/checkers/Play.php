@@ -30,15 +30,18 @@
                             $_SESSION['board']= new Board();
                         }
                         else if(isset($_GET["checker"])){
-
-
-                                $_SESSION['board']->getLogic()->selectedChecker($_GET["checker"]);
-
+                            $_SESSION['board']->getLogic()->selectedChecker($_GET["checker"]);
                         }
                         else if(isset($_GET["show"])){
                             echo '<div style="text-align: center;   ">';
 
-                            $_SESSION['board']->getLogic()->CheckerMove($_GET["show"]);
+                            if($_SESSION['board']->getLogic()->isEmpty($_GET["show"]) && $_SESSION['board']->getLogic()->isSelected()){
+
+                                $_SESSION['board']->getLogic()->CheckerMove($_GET["show"],$_SESSION['board']->getLogic()->getSelectedChecker()->getColor());
+                            }
+
+
+
 
                         }
                         else if(isset($_GET['Submit'])){
@@ -81,7 +84,24 @@
 
                     $id=$cell->getChecker()->get('id');
 
-                    if( $cell->getChecker()->get('color') == "black"){
+                    if($cell->getChecker()->get('color') == "black" && $cell->getChecker()->get('isKing') == true){
+
+                        $s.='<td style= "background-color:#696969">
+                                <input style="background-color:#696969;color:f10707;  width:65px; height:65px;position:center;
+                                              background-image:url(pieces/blackKingPiece.jpg)" type = "submit"
+                                              name = "checker" value ="'.$id.'"/>
+                            </td>';
+
+                    }
+                    else if($cell->getChecker()->get('color') =="red" && $cell->getChecker()->get('isKing') == true){
+
+                        $s.='<td style= "background-color:#696969">
+                                <input style="background-color:#696969;color:black;  width:65px; height:65px;position:center;
+                                              background-image:url(pieces/redKingPiece.jpg)" type = "submit"
+                                              name = "checker" value ="'.$id.'"/>
+                            </td>';
+                    }
+                    else if($cell->getChecker()->get('color') == "black"){
 
                         $s.='<td style= "background-color:#696969">
                                 <input style="background-color:#696969;color:black;  width:65px; height:65px;position:center;
@@ -112,7 +132,7 @@
                     $s.= '<td style= "background-color:#000000;padding:10px"></td>';
                 }
 
-                if($col==7){
+                if($col==Board::COL){
 
                     $s.='</tr>';
 

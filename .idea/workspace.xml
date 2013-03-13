@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/games/checkers/Play.php" line="122" />
-    <bookmark url="file://$PROJECT_DIR$/games/checkers/Board.php" line="28" />
+    <bookmark url="file://$PROJECT_DIR$/games/checkers/Play.php" line="142" />
+    <bookmark url="file://$PROJECT_DIR$/games/checkers/Board.php" line="38" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0496cbb2-7643-42bb-84e7-1ad070ce3a24" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/checkers/pieces/blackKingPiece.jpg" afterPath="$PROJECT_DIR$/games/checkers/pieces/blackKingPiece.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/checkers/pieces/redKingPiece.jpg" afterPath="$PROJECT_DIR$/games/checkers/pieces/redKingPiece.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/checkers/Board.php" afterPath="$PROJECT_DIR$/games/checkers/Board.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/checkers/Cell.php" afterPath="$PROJECT_DIR$/games/checkers/Cell.php" />
@@ -33,16 +35,7 @@
       <file leaf-file-name="GamePiece.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games/checkers/GamePiece.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="46" selection-start="113" selection-end="113" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logic.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/checkers/Logic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="3265" selection-end="3265" vertical-scroll-proportion="-44.76923">
+            <state line="10" column="32" selection-start="219" selection-end="227" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -51,11 +44,21 @@
       <file leaf-file-name="Play.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games/checkers/Play.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="-32.346153">
+            <state line="2" column="4" selection-start="49" selection-end="49" vertical-scroll-proportion="12.423077">
               <folding>
-                <marker date="1363114791748" expanded="true" signature="1151:1173" placeholder="..." />
-                <marker date="1363114791748" expanded="true" signature="3885:3922" placeholder="..." />
+                <marker date="1363202425157" expanded="false" signature="1144:1166" placeholder="..." />
+                <marker date="1363202425157" expanded="true" signature="2442:2466" placeholder="..." />
+                <marker date="1363202425157" expanded="false" signature="5247:5284" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logic.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/games/checkers/Logic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="13" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.22481441">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,16 +66,16 @@
       <file leaf-file-name="Cell.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games/checkers/Cell.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="-10.769231">
+            <state line="35" column="30" selection-start="593" selection-end="603" vertical-scroll-proportion="-7.1923075">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Board.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/games/checkers/Board.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="25" selection-start="947" selection-end="947" vertical-scroll-proportion="0.52279955">
+            <state line="20" column="33" selection-start="458" selection-end="458" vertical-scroll-proportion="-5.5384617">
               <folding />
             </state>
           </provider>
@@ -102,11 +105,11 @@
         <option value="$PROJECT_DIR$/games/checkers/GamePieces.php" />
         <option value="$PROJECT_DIR$/../procedural/section2.php" />
         <option value="$PROJECT_DIR$/games/checkers/logic.php" />
-        <option value="$PROJECT_DIR$/games/checkers/Play.php" />
+        <option value="$PROJECT_DIR$/games/checkers/GamePiece.php" />
         <option value="$PROJECT_DIR$/games/checkers/Cell.php" />
         <option value="$PROJECT_DIR$/games/checkers/Board.php" />
+        <option value="$PROJECT_DIR$/games/checkers/Play.php" />
         <option value="$PROJECT_DIR$/games/checkers/Logic.php" />
-        <option value="$PROJECT_DIR$/games/checkers/GamePiece.php" />
       </list>
     </option>
   </component>
@@ -148,7 +151,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,6 +225,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,7 +337,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="28" width="1920" height="1052" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -413,7 +416,7 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
@@ -421,21 +424,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="51.75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xhtml/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="197" selection-end="230" vertical-scroll-proportion="-3.125" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/etc/local.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="26" selection-start="1413" selection-end="1426" vertical-scroll-proportion="0.0" />
@@ -443,9 +431,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/games/blackjack.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="5" vertical-scroll-proportion="-2.3796394">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="5" vertical-scroll-proportion="-2.3796394" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webide.jar!/resources/html5-schema/common.rnc">
@@ -460,30 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../procedural/section2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="82" selection-start="1212" selection-end="1278" vertical-scroll-proportion="0.090137854">
-          <folding>
-            <marker date="1362676073091" expanded="true" signature="3030:3066" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="3174:3225" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="3400:3451" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="3938:3989" placeholder="..." />
-            <marker date="1362676073091" expanded="false" signature="4058:4069" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="4095:4613" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="4128:4231" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="4291:4394" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="4452:4555" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="4589:4608" placeholder="..." />
-            <marker date="1362676073091" expanded="true" signature="5657:5708" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/checkers/pieces/redKingPiece.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/games/checkers/pieces/blackKingPiece.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -494,40 +456,82 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../procedural/section2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="82" selection-start="1212" selection-end="1278" vertical-scroll-proportion="0.3244963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Varien/Autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="5" selection-start="1938" selection-end="1965" vertical-scroll-proportion="0.46871686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="12" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.5588547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="2" selection-start="2602" selection-end="2642" vertical-scroll-proportion="0.873807">
+          <folding>
+            <marker date="1361211481763" expanded="false" signature="1045:1091" placeholder="..." />
+            <marker date="1361211481763" expanded="true" signature="1092:1515" placeholder="..." />
+            <marker date="1361211481763" expanded="false" signature="1106:1154" placeholder="..." />
+            <marker date="1361211481763" expanded="true" signature="1155:1334" placeholder="..." />
+            <marker date="1361211481763" expanded="false" signature="1168:1267" placeholder="..." />
+            <marker date="1361211481763" expanded="true" signature="1268:1328" placeholder="..." />
+            <marker date="1361211481763" expanded="true" signature="1337:1509" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/pieces/redKingPiece.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/games/checkers/GamePiece.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="113" selection-end="113" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/checkers/Logic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3265" selection-end="3265" vertical-scroll-proportion="-44.76923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/checkers/Cell.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="-10.769231">
+        <state line="10" column="32" selection-start="219" selection-end="227" vertical-scroll-proportion="-6.5384617">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/checkers/Play.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="-32.346153">
+        <state line="2" column="4" selection-start="49" selection-end="49" vertical-scroll-proportion="12.423077">
           <folding>
-            <marker date="1363114791748" expanded="true" signature="1151:1173" placeholder="..." />
-            <marker date="1363114791748" expanded="true" signature="3885:3922" placeholder="..." />
+            <marker date="1363202425157" expanded="false" signature="1144:1166" placeholder="..." />
+            <marker date="1363202425157" expanded="true" signature="2442:2466" placeholder="..." />
+            <marker date="1363202425157" expanded="false" signature="5247:5284" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/checkers/Board.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="947" selection-end="947" vertical-scroll-proportion="0.52279955">
+        <state line="20" column="33" selection-start="458" selection-end="458" vertical-scroll-proportion="-5.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/Cell.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="30" selection-start="593" selection-end="603" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/checkers/Logic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="13" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.22481441">
           <folding />
         </state>
       </provider>
