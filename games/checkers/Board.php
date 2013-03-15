@@ -59,9 +59,12 @@ include 'GamePiece.php';
         }
         public function switchTurn(){
             $this->_turn = $this->_turn === "black" ? "red" : "black";
+
+            echo '<h4> It is '.$this->_turn.'s turn</h4>';
         }
         public function getTurn(){
 
+            echo '<h4> It is '.$this->_turn.'s turn</h4>';
             return $this->_turn;
 
         }

@@ -22,18 +22,19 @@
     <body>
         <form method ="get" action="" >
             <div style="text-align: center;   ">
-                <input type = "Submit" Name = "Submit" VALUE = "New Game" /><br><br>
+                <input type = "Submit" Name = "Submit" VALUE = "New Game" style="margin-right:105px;" /><br><br>
                 <table style= "padding:5px ; margin:auto; background-color:white"border="4">
                     <?php
 
                         if(!isset($_SESSION['board'])){
                             $_SESSION['board']= new Board();
+
                         }
                         else if(isset($_GET["checker"])){
                             $_SESSION['board']->getLogic()->selectedChecker($_GET["checker"]);
                         }
                         else if(isset($_GET["show"])){
-                            echo '<div style="text-align: center;   ">';
+
 
                             if($_SESSION['board']->getLogic()->isEmpty($_GET["show"]) && $_SESSION['board']->getLogic()->isSelected()){
 
@@ -45,6 +46,7 @@
 
                         }
                         else if(isset($_GET['Submit'])){
+                            echo '<h4> Black is first</h4>';
                             unset($_SESSION['board']);
                             $_SESSION['board']= new Board();
                         }

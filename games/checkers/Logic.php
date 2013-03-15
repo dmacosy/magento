@@ -6,9 +6,11 @@ class Logic
     protected  $_currentPos;
     protected  $_selected;
     protected  $_isSelected;
+    protected  $_canJump;
 
     function __construct(){
-        $_isSelected= false;
+        $this->_isSelected= false;
+        $this->_canJump= false;
 
     }
 
@@ -31,10 +33,7 @@ class Logic
 
                     }
                     else if(strpos($ID,'-') !== false){
-//                    else if(!is_object($cell->getChecker()) && strlen($ID)>2){
-
                         $str=explode("-", $ID);
-
                         $currentX=(int)$str[0];
                         $currentY=(int)$str[1];
                     }
@@ -51,97 +50,52 @@ class Logic
 
     public function canMove($currentX,$currentY,$targetX,$targetY,$color ){
         $board = $_SESSION['board']->getBoard();
-        if(($currentX< $targetX)&& $color=="red"&& $board[$currentX][$currentY]->getKing()==false){
-            return false;
-        }
-        else if(($currentX> $targetX)&& $color=="black"&& $board[$currentX][$currentY]->getKing()==false){
-            return false;
-        }
-        else{
-            if((($currentX+1==$targetX)||($currentX-1==$targetX)) && (($currentY+1==$targetY)||($currentY-1==$targetY))
-                &&  ($board[$targetX][$targetY]->getPiece()==false) ){
-
-                return true;
-
+        if ((($targetX >= 0) && ($targetX <= 7) && ($targetY >= 0) && ($targetY <= 7))
+        &&(($currentX >= 0) && ($currentX <= 7) && ($currentY >= 0) && ($currentY <= 7))){
+            if(($currentX< $targetX)&& $color=="red"&& $board[$currentX][$currentY]->getKing()==false){
+                return false;
             }
-            else if((($currentX+2==$targetX)||($currentX-2==$targetX)) && (($currentY+2==$targetY)||($currentY-2==$targetY))
-                &&  ($board[$targetX][$targetY]->getPiece()==false)  ){
+            else if(($currentX> $targetX)&& $color=="black"&& $board[$currentX][$currentY]->getKing()==false){
+                return false;
+            }
+            else{
 
-
-                    if((($targetX<=$currentX)&&($targetY<=$currentY)) &&
-                        ($board[$currentX-1][$currentY-1]->getColor() !=
-                         $board[$currentX][$currentY]->getColor())){
-
-                        $board[$currentX-1][$currentY-1]->makeNull();
-                    }
-                    else if((($targetX<=$currentX)&&($targetY>=$currentY)) &&
-                             ($board[$currentX-1][$currentY+1]->getColor() !=
-                              $board[$currentX][$currentY]->getColor())){
-
-                        $board[$currentX-1][$currentY+1]->makeNull();
-                    }
-
-                    else if((($targetX>=$currentX)&&($targetY<=$currentY)) &&
-                             ($board[$currentX+1][$currentY-1]->getColor() !=
-                              $board[$currentX][$currentY]->getColor())){
-
-                        $board[$currentX+1][$currentY-1]->makeNull();
-                    }
-                    else if((($targetX>=$currentX)&&($targetY>=$currentY)) &&
-                             ($board[$currentX+1][$currentY+1]->getColor() !=
-                              $board[$currentX][$currentY]->getColor())){
-
-                        $board[$currentX+1][$currentY+1]->makeNull();
-                    }
-                    else{
-
-                        return false;
-                    }
-
+                if((($currentX+1==$targetX)||($currentX-1==$targetX)) && (($currentY+1==$targetY)||($currentY-1==$targetY))
+                    &&  ($board[$targetX][$targetY]->getPiece()==false) ){
 
                     return true;
 
+                }
+                else{
+                    return false;
+                }
             }
 
-//            else if((($currentX+4==$targetX)||($currentX-4==$targetX)) || (($currentY+4==$targetY)||($currentY-4==$targetY))
-//                &&  ($board[$targetX][$targetY]->getPiece()==false)  ){
-//
-////                echo $currentX+2 ;
-////                echo $currentY-2 ;
-//
-//                if((($currentY==$targetY)||($currentY==$targetY))){
-//                    $board[$currentX+2] ;
-//                    echo $currentY-2 ;
-//                    if($board[$currentX+2][$currentY-2]->getPiece()==false &&
-//                        $board[$currentX+1][$currentY-1]->getPiece()==true &&
-//                        $board[$currentX+3][$currentY-1]->getPiece()==true){
-//
-//                        $board[$currentX+1][$currentY-1]->makeNull();
-//                        $board[$currentX+3][$currentY-1]->makeNull();
-//
-//                    }
-//                    else if(($board[$currentX+2][$currentY+2]->getPiece()==false) &&
-//                        ($board[$currentX+1][$currentY+1]->getPiece()==true)  &&
-//                        ($board[$currentX+3][$currentY+1]->getPiece()==true)){
-//
-//                        echo $currentX+2 ;
-//                        echo $currentY-2 ;
-//                        $board[$currentX+1][$currentY+1]->makeNull();
-//                        $board[$currentX+3][$currentY+1]->makeNull();
-//
-//
-//                    }
-//                    else{
-//
-//                        return false;
-//                    }
-//                    return true;
-//                }
-//
-//            }
+        }
+    }
 
-            else{
+    public function ifJump($currentX,$currentY,$targetX,$targetY,$color ){
+        $board = $_SESSION['board']->getBoard();
+        if ((($targetX >= 0) && ($targetX <= 7) && ($targetY >= 0) && ($targetY <= 7))
+            &&(($currentX >= 0) && ($currentX <= 7) && ($currentY >= 0) && ($currentY <= 7))){
+            if(($currentX< $targetX)&& $color=="red"&& $board[$currentX][$currentY]->getKing()==false){
                 return false;
+            }
+            else if(($currentX> $targetX)&& $color=="black"&& $board[$currentX][$currentY]->getKing()==false){
+                return false;
+            }
+            else{
+
+                if((($currentX+2==$targetX)||($currentX-2==$targetX)) && (($currentY+2==$targetY)||($currentY-2==$targetY))
+                    &&  ($board[$targetX][$targetY]->getPiece()==false)  ){
+
+                    $this->_canJump= true;
+                    return true;
+
+                }
+                else{
+                    return false;
+                }
             }
         }
     }
@@ -171,7 +125,7 @@ class Logic
 
 
     public function CheckerMove($targetID,$color){
-        $board = &$_SESSION['board']->getBoard();
+
         $this->setPosition($targetID);
         $targetPos=$this->getPosition();
         $str=explode(",", $targetPos);
@@ -181,28 +135,75 @@ class Logic
         $currentX=$this->_currentPos[0];
         $currentY=$this->_currentPos[1];
 
-//        if($targetX== 0 && $board[$currentX][$currentY]->getColor()== "red" ){
-//
-//            $board[$currentX][$currentY]->setKing();
-//        }
-//        else if($targetX== 7 && $board[$currentX][$currentY]->getColor()== "black" ){
-//
-//            $board[$currentX][$currentY]->setKing();
-//        }
 
-        if($this->canMove($currentX,$currentY,$targetX,$targetY,$color)){
+        if($this->canMove($currentX,$currentY,$targetX,$targetY,$color)||$this->ifJump($currentX,$currentY,$targetX,$targetY,$color )){
             $board = $_SESSION['board']->getBoard();
-            $s=$board[$targetX][$targetY];
-            $t=$board[$currentX][$currentY];
+            if($targetX== 0 && $board[$currentX][$currentY]->getColor()== "red" ){
 
-            $s->takeChecker($t->getChecker());
-            $board[$currentX][$currentY]->makeNull();
-            $this->_isSelected=false;
+                $board[$currentX][$currentY]->setKing();
+            }
+            else if($targetX== 7 && $board[$currentX][$currentY]->getColor()== "black" ){
 
-            //@todo multijump
+                $board[$currentX][$currentY]->setKing();
+            }
 
-            $_SESSION['board']->switchTurn();
+
+        if($this->_canJump== true){
+           $this->makeJump($currentX,$currentY,$targetX,$targetY);
+
         }
+            $this->remove($currentX,$currentY,$targetX,$targetY);
+            $_SESSION['board']->switchTurn();
+
+        }
+
+    }
+    public function remove($currentX,$currentY,$targetX,$targetY){
+        $board = $_SESSION['board']->getBoard();
+        $s=$board[$targetX][$targetY];
+        $t=$board[$currentX][$currentY];
+
+        $s->takeChecker($t->getChecker());
+        $board[$currentX][$currentY]->makeNull();
+        $s->setPiece(true);
+        $this->_isSelected=false;
+
+
+
+    }
+
+
+
+    public function makeJump($currentX,$currentY,$targetX,$targetY){
+        $board = $_SESSION['board']->getBoard();
+
+        if((($targetX<=$currentX)&&($targetY<=$currentY)) &&
+            ($board[$currentX-1][$currentY-1]->getColor() !=
+                $board[$currentX][$currentY]->getColor())){
+
+            $board[$currentX-1][$currentY-1]->makeNull();
+        }
+        else if((($targetX<=$currentX)&&($targetY>=$currentY)) &&
+            ($board[$currentX-1][$currentY+1]->getColor() !=
+                $board[$currentX][$currentY]->getColor())){
+
+            $board[$currentX-1][$currentY+1]->makeNull();
+        }
+
+        else if((($targetX>=$currentX)&&($targetY<=$currentY)) &&
+            ($board[$currentX+1][$currentY-1]->getColor() !=
+                $board[$currentX][$currentY]->getColor())){
+
+            $board[$currentX+1][$currentY-1]->makeNull();
+        }
+        else if((($targetX>=$currentX)&&($targetY>=$currentY)) &&
+            ($board[$currentX+1][$currentY+1]->getColor() !=
+                $board[$currentX][$currentY]->getColor())){
+
+            $board[$currentX+1][$currentY+1]->makeNull();
+        }
+        $this->_canJump=false;
+
 
     }
 
@@ -217,41 +218,6 @@ class Logic
         }
         return true;
     }
-
-    public function multiJump($currentX,$currentY,$targetX,$targetY){
-        $board = $_SESSION['board']->getBoard();
-
-       if((($currentY+4==$targetY)||($currentY-4==$targetY))){
-            if($board[$currentX+2][$currentY-2]->getPiece()==false &&
-               $board[$currentX+1][$currentY-1]->getPiece()==true  &&
-               $board[$currentX+3][$currentY-1]->getPiece()==true){
-
-                $board[$currentX+1][$currentY-1]->makeNull();
-                $board[$currentX+3][$currentY-1]->makeNull();
-
-            }
-            else if($board[$currentX+2][$currentY+2]->getPiece()==false &&
-                    $board[$currentX+1][$currentY+1]->getPiece()==true  &&
-                    $board[$currentX+3][$currentY-1]->getPiece()==true){
-
-                    $board[$currentX+1][$currentY+1]->makeNull();
-                    $board[$currentX+3][$currentY+1]->makeNull();
-
-
-            }
-           else{
-
-               return false;
-           }
-          return true;
-       }
-       else{
-           return false;
-       }
-
-}
-
-
 
 
     /**
